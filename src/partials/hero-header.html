@@ -1,0 +1,122 @@
+<header class="header" id="home">
+    <div class="container">
+        <nav class="header__nav">
+            <div class="header__mobile">
+                <a href="./index.html" class="logo">
+                    <svg class="logo__icon" width="199" height="50">
+                        <use href="./images/icons/icons.svg#icon-logo"></use>
+                    </svg>
+                </a>
+
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="./index.html" class="header__menu-link current">Home</a></li>
+                    <li class="header__menu-item"><a href="#advantages" class="header__menu-link">About us</a></li>
+                    <li class="header__menu-item"><a href="#how" class="header__menu-link">How it’s made?</a></li>
+                    <li class="header__menu-item"><a href="#products" class="header__menu-link">Our products</a></li>
+                    <li class="header__menu-item"><a href="#contacts" class="header__menu-link">Contact</a></li>
+                </ul>
+
+                <button class="menu-button__open">
+                    <svg width="20" height="12">
+                        <use href="./images/icons/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
+                <button class="button button-buy" data-modal-open>Buy now
+                    <svg class="button__arrow" width="4" height="8">
+                        <use href="./images/icons/icons.svg#icon-arrow-2"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-menu is-hidden">
+                <button class="menu-button__close">
+                    <svg width="14" height="14px">
+                        <use href="./images/icons/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <button class="button mobile-button-buy" data-modal-open-mobile>Buy now
+                    <svg class="button__arrow" width="4" height="8">
+                        <use href="./images/icons/icons.svg#icon-arrow-2"></use>
+                    </svg>
+                </button>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#home" class="menu__link current">Home</a></li>
+                    <li class="menu__item"><a href="#advantages" class="menu__link">About us</a></li>
+                    <li class="menu__item"><a href="#how" class="menu__link">How it’s made?</a></li>
+                    <li class="menu__item"><a href="#products" class="menu__link">Our products</a></li>
+                    <li class="menu__item"><a href="#contacts" class="menu__link">Contact</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero__wrap">
+            <h1 class="hero__title">ice cream
+                made with <span class="hero__title--red">passion</span>
+            </h1>
+            <div class="hero__circle">
+                <picture>
+                    <source srcset="./images/hero/ice-cream-mob.png 1x, ./images/hero/ice-cream-mob-2x.png 2x"
+                        media="(max-width:767px)">
+                    <source srcset="./images/hero/ice-cream-tab.png 1x, ./images/hero/ice-cream-tab-2x.png 2x"
+                        media="(max-width:1199px)">
+                    <source srcset="./images/hero/ice-cream.png 1x, ./images/hero/ice-cream-2x.png 2x"
+                        media="(min-width:1200px)">
+                    <img class="hero__circle-img" src="./images/hero/ice-cream.png" alt="ice-cream">
+                </picture>
+            </div>
+            <div class="hero__number">
+                <div class="hero__number-item">
+                    <span class="hero__number-cafes">16</span>
+                    <p class="hero__text-cafes">cafes</p>
+                </div>
+                <div class="hero__food">
+                    <span class="hero__number-food">23</span>
+                    <p class="hero__text-food">food trucks</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-buttons">
+            <a class="button hero-buttons__btn current-btn" href="#products">Products</a>
+            <a class="button hero-buttons__btn hero-buttons__btn--accent" href="#how">How it’s made?</a>
+        </div>
+        <div class="hero__slider-pic">
+            <div class="hero__bg-milk">
+                <picture>
+                    <source srcset="./images/hero/milk-tab.png 1x, ./images/hero/milk-tab-2x.png 2x"
+                        media="(max-width:1199px)">
+                    <source srcset="./images/hero/milk.png 1x, ./images/hero/milk-2x.png 2x" media="(min-width:1200px)">
+                    <img class="hero__img-milk" src="./images/hero/milk.png" alt="milk">
+                </picture>
+                <div class="hero__text-milk">
+                    <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et</p>
+                    <div class="hero__subcontainer is-hidden">
+                        <p class="hero__subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                            quidem nostrum quasi necessitatibus delectus commodi recusandae quaerat velit totam modi
+                            laboriosam. Distinctio, possimus quam itaque et quae dolore nesciunt repellendus.</p>
+                    </div>
+                    <button class="btn__bio-eco" data-modal-header-down-open>
+                        <svg class="btn__icon" width="8" height="8">
+                            <use href="./images/icons/icons.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hero__bg-girl">
+                <picture>
+                    <source srcset="./images/hero/girl-tab.png 1x, ./images/hero/girl-tab-2x.png 2x"
+                        media="(max-width:1199px)">
+                    <source srcset="./images/hero/girl.png 1x, ./images/hero/girl-2x.png 2x" media="(min-width:1200px)">
+
+                    <img class="hero__img-girl" src="./images/hero/girl.png" alt="girl">
+                </picture>
+            </div>
+        </div>
+
+    </div>
+</section>

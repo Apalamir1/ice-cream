@@ -1,0 +1,194 @@
+// .gallary-section {
+//   padding-top: 30px;
+//   background-image: linear-gradient(
+//     to bottom,
+//     $mainBgColor 60px,
+//     $thirdTexColor 60px,
+//     $thirdTexColor 100%
+//   );
+// }
+.gallary-section {
+  background-image: linear-gradient(to bottom,
+      $mainBgColor 20px,
+      $thirdTexColor 20px,
+    );
+  padding-top: 0;
+
+
+  @include tablet {
+    background-image: linear-gradient(to bottom,
+        $mainBgColor 170px,
+        $thirdTexColor 170px,
+      );
+    padding-bottom: 60px;
+
+    @include desktop {
+      background-image: linear-gradient(to bottom,
+          $mainBgColor 130px,
+          $thirdTexColor 130px,
+        );
+      padding-bottom: 120px;
+      padding-top: 60px;
+    }
+  }
+}
+
+.gallery img {
+  height: 100%;
+}
+
+.gallery {
+  // background: #fff;
+  // max-width: 1200px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1013px;
+  }
+}
+
+/* clearfix */
+.gallery:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- gallery-item ---- */
+
+.gallery-sizer,
+.gallery-item {
+  //   width: 45px;
+  width: 44px;
+
+  @include tablet() {
+    width: 108px;
+  }
+
+  @include desktop() {
+    width: 142px;
+  }
+}
+
+.gallery-item {
+  //   height: 120px;
+  margin-bottom: 2.5px;
+  // float: left;
+  // margin-left: auto;
+  // margin-right: auto;
+  transition-duration: 250ms;
+  transition-property: transform;
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  // width: 45px;
+  // max-width: 1000px;
+  // height: 45px;
+  // max-height: 1000px;
+}
+
+.gallery-item--width2 {
+  //   min-width: 45px;
+  // max-width: 100%;
+  width: 44px;
+  height: 44px;
+
+  @include tablet() {
+    width: 105px;
+    height: 105px;
+  }
+
+  @include desktop() {
+    width: 138px;
+    height: 138px;
+  }
+}
+
+.gallery-item--width3 {
+  width: 90px;
+  height: 90px;
+
+  @include tablet() {
+    width: 215px;
+    height: 215px;
+  }
+
+  @include desktop() {
+    width: 284px;
+    height: 284px;
+  }
+}
+
+.gallery-item--solo {
+  margin-bottom: 44px;
+  margin-top: 44px;
+
+  @include tablet {
+    margin-bottom: 105px;
+    margin-top: 105px;
+  }
+
+  @include desktop {
+    margin-bottom: 138px;
+    margin-top: 138px;
+  }
+}
+
+.gallery-item--duo {
+  margin-top: 20px;
+
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  @include desktop {
+    margin-top: 65px;
+  }
+}
+
+.gallery-item--duo-half {
+  margin-top: 10px;
+
+  @include tablet {
+    margin-top: 20px;
+  }
+
+  @include desktop {
+    margin-top: 30px;
+  }
+}
+
+.gallery-item--left {
+  margin-right: 44px;
+
+  @include tablet {
+    margin-right: 0;
+  }
+
+  @include desktop {
+    margin-right: 0;
+  }
+}
+
+.gallery__image {
+  // width: 100%;
+  // height: auto;
+}
+
+// .gallery-item--duet {
+//   margin-top: 25px;
+// }
+
+// .gallery-item--after {
+//   margin-top: 25px;
+// }

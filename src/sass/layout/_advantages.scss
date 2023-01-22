@@ -1,0 +1,146 @@
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 64px;
+  }
+
+  @include desktop {
+    padding-bottom: 120px;
+  }
+}
+
+.contaier {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.advant {
+  @include tablet {
+    display: flex;
+  }
+}
+.advant__item:before {
+  display: block;
+  content: '';
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.advant__item:nth-child(1):before {
+  background-image: url(../images/advantages/icon-milk-mob.png.png);
+  background-image: url(../images/advantages/icon-milk-mob-2x.png.png);
+  @include tablet {
+    background-image: url(../images/advantages/icon-milk-tab.png.png);
+    background-image: url(../images/advantages/icon-milk-tab-2x.png.png);
+    @include desktop {
+      background-image: url(../images/advantages/icon-milk.png.png);
+      background-image: url(../images/advantages/icon-milk-2x.png.png);
+    }
+  }
+}
+.advant__item:nth-child(2):before {
+  background-image: url(../images/advantages/icon-cocktail-mob.png.png);
+  background-image: url(../images/advantages/icon-cocktail-mob-2x.png.png);
+  @include tablet {
+    background-image: url(../images/advantages/icon-cocktail-tab.png.png);
+    background-image: url(../images/advantages/icon-cocktail-tab-2x.png.png);
+    @include desktop {
+      background-image: url(../images/advantages/icon-cocktail.png.png);
+      background-image: url(../images/advantages/icon-cocktail-2x.png.png);
+    }
+  }
+}
+.advant__item:nth-child(3):before {
+  background-image: url(../images/advantages/icon-heart-mob.png.png);
+  background-image: url(../images/advantages/icon-heart-mob-2x.png.png);
+  @include tablet {
+    background-image: url(../images/advantages/icon-heart-tab.png.png);
+    background-image: url(../images/advantages/icon-heart-tab-2x.png.png);
+    @include desktop {
+      background-image: url(../images/advantages/icon-heart.png.png);
+      background-image: url(../images/advantages/icon-heart-2x.png.png);
+    }
+  }
+}
+.advant__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @include tablet {
+    width: 190px;
+    margin-bottom: 0px;
+    margin-left: 22px;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+
+  @include desktop {
+    width: 300px;
+    margin-left: 115px;
+  }
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+
+.advant__namber {
+  font-family: 'Titan One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  color: $mainTextColor;
+
+  min-width: 98px;
+  height: 56px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+
+  @include tablet {
+    font-size: 48px;
+
+    margin-top: 36px;
+    margin-bottom: 13px;
+  }
+
+  @include desktop {
+    font-size: 58px;
+
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.advant__descr {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.76;
+  color: $fourthTextColor;
+
+  width: 230px;
+
+  @include tablet {
+    width: 180px;
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  @include desktop {
+    width: 300px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    margin-right: 0px;
+  }
+}

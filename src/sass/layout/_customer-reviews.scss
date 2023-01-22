@@ -1,0 +1,153 @@
+.slider {
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 1000ms;
+  transition-property: opacity, transform;
+}
+
+.slider-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+
+  opacity: 0;
+
+  transform: translateY(-100%);
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+  transition-property: transform, opacity;
+}
+
+.selected-slide.reviews-carusel__swipe-item {
+  background-color: #c7133e;
+  transform: scale(1.2);
+}
+
+.customer-reviews {
+  background-color: $thirdTexColor;
+  padding-top: 0;
+}
+
+.reviews-img {
+  margin: 0 auto;
+  width: 85px;
+}
+
+.review {
+  position: relative;
+  background-color: rgba(250, 250, 250, 1);
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  padding-top: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review__text {
+  z-index: 1;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  /* or 31px */
+  min-width: 180px;
+
+  text-align: center;
+  color: #000000;
+
+  padding-bottom: 10px;
+
+  background: repeating-linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0) 29px,
+    #e1e1e1,
+    #e1e1e1 31px
+  );
+  background-position-y: 1px;
+}
+
+.review::before {
+  content: url('../images/icons/quote.svg');
+  //background-image: url('../images/icons/quote.svg');
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.reviews-carusel {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.reviews-carusel__dots-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.reviews-carusel__dots-item {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #c7133e;
+}
+
+.reviews-carusel__name-client {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  /* or 26px */
+
+  text-align: center;
+
+  color: #000000;
+
+  margin-bottom: 15px;
+}
+
+.reviews-carusel__swipe-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reviews-carusel__swipe-item {
+  cursor: pointer;
+}
+
+.reviews-carusel__swipe-item {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.reviews-carusel__swipe-home {
+  cursor: pointer;
+}
+
+.reviews-carusel__icon {
+  display: flex;
+  fill: #d9d9d9;
+}
+
+.home--selected {
+  fill: #c7133e;
+}

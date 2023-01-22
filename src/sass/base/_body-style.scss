@@ -1,0 +1,14 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: $mainBgColor ;
+    color: $mainTextColor;
+    font-weight: 500;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}

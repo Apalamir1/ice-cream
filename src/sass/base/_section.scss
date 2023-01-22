@@ -1,0 +1,20 @@
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+
+  @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include desktop {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+  &--bg-white {
+    background-color: #ffffff;
+  }
+}
+
